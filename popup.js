@@ -1,7 +1,7 @@
-// popup.js
+document.getElementById('applyFont').addEventListener('click', () => {
+  const fontFileInput = document.getElementById('fontFileInput');
+  const fontFile = fontFileInput.files[0];
 
-document.getElementById('fontFileInput').addEventListener('change', (event) => {
-  const fontFile = event.target.files[0];
   if (fontFile) {
     const reader = new FileReader();
     reader.onload = (event) => {
